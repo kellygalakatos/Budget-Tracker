@@ -24,20 +24,38 @@
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Budget Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXs-UT-4GB">
+                                <rect key="frame" x="64" y="285" width="247" height="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qDe-af-B1q">
+                                <rect key="frame" x="16" y="318" width="343" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96125119575674145" blue="0.97242811486948777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qDe-af-B1q" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="0nm-Af-OKy"/>
                             <constraint firstItem="BGX-SX-MAo" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="32" id="1Al-in-wAM"/>
+                            <constraint firstItem="uXs-UT-4GB" firstAttribute="centerX" secondItem="qDe-af-B1q" secondAttribute="centerX" id="1gv-Z6-bHo"/>
+                            <constraint firstItem="qDe-af-B1q" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="97T-xG-qlR"/>
+                            <constraint firstItem="qDe-af-B1q" firstAttribute="centerY" secondItem="PQr-Ze-W5v" secondAttribute="centerY" id="A73-YN-otT"/>
                             <constraint firstItem="BGX-SX-MAo" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="56" id="a9X-O5-hbi"/>
                             <constraint firstItem="BGX-SX-MAo" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="jet-xk-pa6"/>
+                            <constraint firstItem="qDe-af-B1q" firstAttribute="top" secondItem="uXs-UT-4GB" secondAttribute="bottom" constant="11" id="lRJ-64-IBW"/>
+                            <constraint firstItem="uXs-UT-4GB" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="mq4-2a-FkL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="progressTracker" destination="qDe-af-B1q" id="Knb-ch-gut"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="-873"/>
+            <point key="canvasLocation" x="1784.8" y="-873.01349325337333"/>
         </scene>
         <!--History-->
         <scene sceneID="Bkr-iy-TrU">
